@@ -1,0 +1,33 @@
+
+.rectangle {
+    counter-reset: li; 
+    list-style: none; 
+    font: 20px "Trebuchet MS", "Lucida Sans";
+    padding: 20px;
+    background-color: #ED9EAE;
+    }
+    .rectangle a {
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em .8em;
+        margin: .5em 0 .5em 2.5em;
+        background:#C66376;
+        color: #fffcfc;
+        text-decoration: none;
+        transition: all .3s ease-out;
+        }
+        .rectangle a:hover {background:#9E354A;}       
+        .rectangle a:before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        left: -2.5em;
+        top: 50%;
+        margin-top: -1em;
+        background: #C66376;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        text-align: center;
+        font-weight: bold;
+        }
